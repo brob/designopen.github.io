@@ -67,6 +67,6 @@ authors:
     github: mrondina
     bio: 'Interactive designer working in web, games and mobile development.'
 
-resourceTags: ["source", "example", "opendesign", "blog", "benefits",
-	"challenges", "community", "design"]
+resourceTags: ["benefits", "blog", "challenges", "community", "design",
+	"example", "opendesign", "source"]
 
