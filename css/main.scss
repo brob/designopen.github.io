@@ -376,6 +376,7 @@ $offWhite : #fcf2d7;
 }
 .navbar-wrapper {
   width: 100%;
+  z-index: 10000;
 }
 
 $bgDefault      : #444444;
@@ -478,4 +479,40 @@ $designHeight : 30rem;
     border-radius: 100px;
     float: right;
   }
+}
+$blue : #2ab69d;
+
+.articles {
+  background-color: $blue;
+  width: 100%;
+  height: 30rem;
+  h2 {
+    padding: 50px 0px 30px 10px;
+    color: $offWhite;
+    font-size: 3rem;
+    margin-top: 0;
+  }
+  h4 {
+    text-align: right;
+    a {
+      font-size: 2rem;
+      color: $offWhite;
+    }
+  }
+  .bounds {
+    max-width: 820px;
+    height: 100%;
+  }
+
+}
+.article-flex {
+  display: flex;
+}
+.article-feature {
+  display: inline-block;
+  width: 250px;
+  height: 250px;
+  border-radius: 50px;
+  margin: 0px 10px 0px 10px;
+  background-color: $offWhite;
 }
