@@ -9,27 +9,29 @@ title: Home
       <p>If you have 39 minutes <a href="/blogging_about/designers-can-open-source-session-video/">watch this presentation</a>, if not <a href="/blogging_about/the-open-source-design-manifesto/">read the manifesto</a>. If you're curious about this site <a href="/blogging_about/building_this_site/">read this post</a>.  Finally, if you'd like to help contribute design, code, or content; <a href="/blogging_about/the-roadmap/">checkout the roadmap</a> or hit us up on the #opensourcedesign channel (Freenode) in IRC.
   </section>
 
-  <section class="home-section" itemscope itemtype="http://schema.org/Blog">
-    <h2 class="title" itemscope itemprop="name">Articles</h2>
-    <ul class="bloglist">
+  <section class="articles">
+    <div class="bounds">
+      <h2>Featured Articles:</h2>
+      <div class="article-flex">
     {% assign counter = 0 %}
     {% for post in site.categories.blogging_about %}
     {% if post.tags contains 'featured' and counter < 3 %}
     {% assign counter=counter | plus:1 %}
     {% assign author = site.authors[post.author] %}
-      <li class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
-        <h3 class="title" itemscope itemprop="name"><a href="{{ post.url }}" itemprop="url">{{ post.title }}</a></h3>
-        <div class="meta">
-          <time datetime="{{post.date | date: "%Y-%m-%d" }}" itemscope itemprop="datePublished">posted {{post.date | date: "%b %e" }}</time>
-          <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
-            by <a href="{{author.web}}" itemprop="url"><span itemprop="name">{{author.display_name}}</span></a>
-          </span>
-        </div>
-      </li>
+    <div class="article-feature">
+      <img src="http://placekitten.com/244/150">
+      <h3 class="title" itemscope itemprop="name"><a href="{{ post.url }}" itemprop="url">{{ post.title }}</a></h3>
+      <div class="meta">
+        <time datetime="{{post.date | date: "%Y-%m-%d" }}" itemscope itemprop="datePublished">{{post.date | date: "%b %e" }}</time><span class="author-divider"> | </spa>
+        <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person"><a href="{{author.web}}" itemprop="url"><span itemprop="name">{{author.display_name}}</span></a>
+        </span>
+      </div>  
+    </div>
       {% endif %}
 	    {% endfor %}
-    </ul>
-    <p><a href="/blog.html">Read More...</a></p>
+      </div>
+      <h4><a href="blog.html" >More Articles ></a></h4>
+    </div>
   </section>
 
   <section class="home-section" itemscope itemtype="http://schema.org/ItemList">

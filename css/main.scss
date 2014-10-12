@@ -508,11 +508,54 @@ $blue : #2ab69d;
 .article-flex {
   display: flex;
 }
+$stone : #afa791;
+
 .article-feature {
+  position: relative;
   display: inline-block;
   width: 250px;
   height: 250px;
   border-radius: 50px;
   margin: 0px 10px 0px 10px;
   background-color: $offWhite;
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 50px 50px 0 0;
+  }
+  .title {
+    position: absolute;
+    bottom: 40px;
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    text-transform: none;
+    padding-right: 5px;
+    padding-left: 5px;
+    a {
+      width: 100%;
+      height: 40px;
+      display: block;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      color: $stone;
+      font-size: 1.125rem;
+    }
+  }
+  .meta {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    font-size: 0.81rem;
+  }
+  time {
+    color: $blue;
+  }
+  .author a {
+    color: $blue;
+  }
+  .author-divider {
+    color: $stone;
+  }
 }
