@@ -17,10 +17,12 @@ document.addEventListener 'DOMContentLoaded', ->
   trianglePos = findPos @triangle
   @triangleTop = trianglePos[1]
   window.onscroll = (event)=>
-    console.log @triangleTop
     if (window.pageYOffset >= @triangleTop - 50)
-      @triangle.classList.add('down');
-    console.log @triangle
+      if !@triangle.classList.contains('down')
+        @triangle.classList.add('down')
+    else
+      if @triangle.classList.contains('down')
+        @triangle.classList.remove('down')
 
 
   # console.log Sizzle('.triangle1')[0].scrollTop
