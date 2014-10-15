@@ -1,6 +1,7 @@
-
-$red : #e26056;
-$offWhite : #fcf2d7;
+---
+---
+$red: #e26056;
+$offWhite: #fcf2d7;
 /* line 219, /Users/terracomma/sites/osd/css/main.scss */
 .homeheader {
   width: 100%;
@@ -25,40 +26,23 @@ $offWhite : #fcf2d7;
     left: -50px;
   }
 }
-
 @media (min-width: 800px) {
   /* line 219, /Users/terracomma/sites/osd/css/main.scss */
   .homeheader {
     height: 28rem;
   }
 }
-
 /* line 240, /Users/terracomma/sites/osd/css/main.scss */
 .homelogo {
   margin-right: 1rem;
   width: 6rem;
   height: 6rem;
 }
-
 /* line 240, /Users/terracomma/sites/osd/css/main.scss */
 .homelogoSmall {
   margin-right: 1rem;
   width: 2rem;
   height: 2rem;
-}
-
-
-@media only screen and (max-width: 800px) {
-  /* line 248, /Users/terracomma/sites/osd/css/main.scss */
-  :root {
-    font-size: 16px;
-  }
-}
-@media only screen and (min-width: 800px) {
-  /* line 253, /Users/terracomma/sites/osd/css/main.scss */
-  :root {
-    font-size: 18px;
-  }
 }
 .homelogoSmall {
   margin-right: -3px;
@@ -70,63 +54,6 @@ $offWhite : #fcf2d7;
   width: 100%;
   z-index: 10000;
 }
-
-$bgDefault      : #444444;
-$bgHighlight    : #fcf2d7;
-$colDefault     : #fcf2d7;
-$colHighlight   : #fcf2d7;
-.navbar-default {
-  background-color: $bgDefault;
-  background-image: none;
-  /* border-color: $bgHighlight; */
-  border-width: 0px;
-  .navbar-brand {
-    color: $colDefault;
-    &:hover, &:focus {
-      color: $colHighlight; }}
-  .navbar-text {
-    color: $colDefault; }
-  .navbar-nav {
-    > li {
-      > a {
-        color: $colDefault;
-        &:hover,  &:focus {
-          color: $colDefault; }}}
-    > .active {
-      > a, > a:hover, > a:focus {
-        color: $bgDefault;
-        background-image: none;
-        background-color: $colDefault; }}
-    > .open {
-      > a, > a:hover, > a:focus {
-        color: $colHighlight;
-        background-image: none;
-        background-color: $colDefault; }}}
-  .navbar-toggle {
-    /*border-color: $bgHighlight */;
-    &:hover, &:focus {
-      background-color: $bgHighlight; }
-    .icon-bar {
-      background-color: $colDefault; }}
-  .navbar-collapse,
-  .navbar-form {
-    /* border-color: $colDefault; */}
-  .navbar-link {
-    color: $colDefault;
-    &:hover {
-      color: $colHighlight; }}}
-@media (max-width: 767px) {
-  .navbar-default .navbar-nav .open .dropdown-menu {
-    > li > a {
-      color: $colDefault;
-      &:hover, &:focus {
-        color: $colHighlight; }}
-    > .active {
-      > a, > a:hover, > a:focus, {
-        color: $colHighlight;
-        background-color: $bgHighlight; }}}
-}
-
 $designHeight : 30rem;
 .designopen {
   background-color: $red;
@@ -256,16 +183,16 @@ $stone : #afa791;
   margin: -95px auto;
   width: 0;
   height: 0;
-  border-left: 97px solid transparent;
-  border-right: 97px solid transparent;
-  border-top: 97px solid #2AB69D;
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+  border-top: 100px solid #2AB69D;
   top: -30px;
-  -webkit-transition: top 0.5s, border-top 0.5s;
-  transition: top 0.5s border-top 0.5s;
+  -webkit-transition: top 0.25s, border-top 0.25s;
+  transition: top 0.25s border-top 0.25s;
 }
 .triangle1.down {
   top: 0;
-  border-top: 95px solid #E26056;
+  border-top: 95px solid $red;
 }
 .triangle2 {
   background-image: url('../img/HeroImage.jpg');
@@ -280,8 +207,8 @@ $stone : #afa791;
     height: 0;
     content: '';
     position: absolute;
-    border-left: 95px solid #E26056;
-    border-right: 95px solid #E26056;
+    border-left: 95px solid $red;
+    border-right: 95px solid $red;
     border-top: 95px solid transparent;
     left: 0;
     top: 0;

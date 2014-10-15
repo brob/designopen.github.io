@@ -307,3 +307,15 @@ article ol li::before {
   display: inline-block;
   margin: 0;
 }
+@media only screen and (max-width: 800px) {
+  /* line 248, /Users/terracomma/sites/osd/css/main.scss */
+  :root {
+    font-size: 16px;
+  }
+}
+@media only screen and (min-width: 800px) {
+  /* line 253, /Users/terracomma/sites/osd/css/main.scss */
+  :root {
+    font-size: 18px;
+  }
+}
