@@ -4,7 +4,7 @@ $red: #e26056;
 $offWhite: #fcf2d7;
 $stone : #afa791;
 $blue : #2ab69d;
-
+$darkGrey: #444444;
 /* line 219, /Users/terracomma/sites/osd/css/main.scss */
 .homeheader {
   width: 100%;
@@ -216,3 +216,26 @@ $designHeight : 30rem;
     top: 0;
   }
 }
+.resources-section {
+  background-color: $red;
+  color: $darkGrey;
+  width: 100%;
+  .bounds {
+    max-width: 820px;
+    height: 100%;
+  }
+  h2 {
+    padding: 50px 0px 30px 10px;
+    font-size: 3rem;
+    margin-top: 0;
+  }
+  h4 {
+    text-align: right;
+    a {
+      font-size: 2rem;
+      color: $darkGrey;
+    }
+  }
+}
+
+
