@@ -2,6 +2,9 @@
 ---
 $red: #e26056;
 $offWhite: #fcf2d7;
+$stone : #afa791;
+$blue : #2ab69d;
+
 /* line 219, /Users/terracomma/sites/osd/css/main.scss */
 .homeheader {
   width: 100%;
@@ -99,7 +102,6 @@ $designHeight : 30rem;
     float: right;
   }
 }
-$blue : #2ab69d;
 
 .articles {
   background-color: $blue;
@@ -127,7 +129,7 @@ $blue : #2ab69d;
 .article-flex {
   display: flex;
 }
-$stone : #afa791;
+
 
 .article-feature {
   position: relative;
